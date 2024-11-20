@@ -1,0 +1,2 @@
+2024-11-20 17:33:12	5s	sad_caravaggio	ERR	d2c41500a7b21b74a8a8b188095a4788	728f23cd-c336-4c9c-8d79-a93da477cf3e	nextflow run id_pipline.nf
+2024-11-20 17:34:36	5m 34s	boring_colden	OK	d2c41500a7b21b74a8a8b188095a4788	1fb0636d-f172-4884-b8f4-ffd1eb22d093	nextflow run id_pipline.nf
