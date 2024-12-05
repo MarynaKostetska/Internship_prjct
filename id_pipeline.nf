@@ -2,6 +2,7 @@ nextflow.enable.dsl = 2
 
 //Define parameters
 params.seq_id = 'NC_003663.2'
+params.out = "${launchDir}/output"
 
 //Build Efetch URL
 process buildEfetchUrl {
@@ -18,7 +19,7 @@ To download the file, we use the URL created in the previous process.
 As a result, we get the GenBank file saved in the output folder.
 */
 process downloadGenebank {
-    publishDir "output", mode: 'copy', overwrite: true
+    publishDir params.out
     input:
     val (url)
 
@@ -38,7 +39,7 @@ For a GFF3 file, we use the --gff3 option, which generates a GFF3 file containin
 The 2 files obtained as a result of the process are also saved to the output folder.*/
 
 process fileSplitting {
-    publishDir "output", mode: 'copy', overwrite: true
+    publishDir params.out
 
     input:
     path gb
@@ -58,7 +59,7 @@ process fileSplitting {
 
 
 process removeTitle {
-    publishDir "output", mode: 'copy', overwrite: true
+    publishDir params.out
 
     input:
     path fasta
