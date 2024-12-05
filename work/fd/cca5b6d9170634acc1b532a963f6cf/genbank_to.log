@@ -1,0 +1,2 @@
+INFO:root:Starting genbank_to with ['/Users/m_kostetska/Documents/CQ_Bioinformathics/myenv/bin/genbank_to', '-g', 'NC_003663.2.gb', '-n', 'NC_003663.2.fasta']
+INFO:root:Writing all nucleotides to NC_003663.2.fasta

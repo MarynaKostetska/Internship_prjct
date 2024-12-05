@@ -1,0 +1,15 @@
+--2024-11-26 13:13:01--  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_003663.2&rettype=fasta&retmode=text
+Resolving eutils.ncbi.nlm.nih.gov (eutils.ncbi.nlm.nih.gov)... 2607:f220:41e:4290::110, 130.14.29.110
+Connecting to eutils.ncbi.nlm.nih.gov (eutils.ncbi.nlm.nih.gov)|2607:f220:41e:4290::110|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: ‘NC_003663.2.fasta1’
+
+     0K .......... .......... .......... .......... ..........  241K
+    50K .......... .......... .......... .......... ..........  462K
+   100K .......... .......... .......... .......... .......... 23.0M
+   150K .......... .......... .......... .......... .......... 32.4M
+   200K .......... .......... ..                                216K=0.4s
+
+2024-11-26 13:13:03 (525 KB/s) - ‘NC_003663.2.fasta1’ saved [227751]
+

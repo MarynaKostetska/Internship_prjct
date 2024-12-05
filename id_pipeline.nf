@@ -35,17 +35,19 @@ process downloadGenebank {
 For a FASTA file, use the -n option, which displays the nucleotide sequence.
 For a GFF3 file, we use the --gff3 option, which generates a GFF3 file containing 9 columns
 (seqid, source, type, start, end, score, strand, phase, attributes).
-The 2 files obtained as a result of the process are also saved to the output folder.
-*/
+The 2 files obtained as a result of the process are also saved to the output folder.*/
+
 process fileSplitting {
     publishDir "output", mode: 'copy', overwrite: true
 
     input:
     path gb
 
+    /* 'emit' is a directive that allows to declare the output of a process with a specific name.
+    This means that you can access this source data in a workflow using this name.*/
     output:
-	path "${params.seq_id}.fasta"
-    path "${params.seq_id}.gff"
+	path "${params.seq_id}.fasta", emit: fasta
+    path "${params.seq_id}.gff", emit: gff
 	
 	script:
 	"""
@@ -54,7 +56,34 @@ process fileSplitting {
 	"""
 }
 
-workflow {
-    buildEfetchUrl | downloadGenebank | fileSplitting
+
+process removeTitle {
+    publishDir "output", mode: 'copy', overwrite: true
+
+    input:
+    path fasta
+
+    output:
+    path "${params.seq_id}_sequence.fasta"
+    
+    //'awk' - a word processor that allows you to manipulate text, including filtering, formatting and data processing.
+    script:
+    """
+    awk '!/^>/ {print}' ${fasta} > "${params.seq_id}_sequence.fasta"
+    """
 }
 
+workflow {
+    //Create URL chanenel
+    efetch_url_channel = buildEfetchUrl()
+
+    //Pass the URL to the downloadGenebank process
+    genbank_channel = downloadGenebank(efetch_url_channel)
+
+    //Pass the GenBank file in to fileSplitting process
+     fasta_and_gff = fileSplitting(genbank_channel)
+
+    //Pass only FASTA
+    no_title_fasta = removeTitle(fasta_and_gff.fasta) 
+
+}

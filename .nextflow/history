@@ -1,2 +1,20 @@
 2024-11-20 17:33:12	5s	sad_caravaggio	ERR	d2c41500a7b21b74a8a8b188095a4788	728f23cd-c336-4c9c-8d79-a93da477cf3e	nextflow run id_pipline.nf
 2024-11-20 17:34:36	5m 34s	boring_colden	OK	d2c41500a7b21b74a8a8b188095a4788	1fb0636d-f172-4884-b8f4-ffd1eb22d093	nextflow run id_pipline.nf
+2024-11-26 13:12:58	3m 37s	admiring_thompson	OK	85ccf3959204186fb1c1cf1fe169a11e	c22e2cce-6a36-4386-b466-cbaaabbf4c69	nextflow run georg.nf
+2024-12-02 11:58:13	-	focused_mestorf	-	b6f606206dd2eb2a2d514bfc7fc9c529	10d9d7d5-19d8-4cff-8c98-05bc7221e4bb	nextflow run id_pipline.nf
+2024-12-02 11:58:49	-	happy_woese	-	b6f606206dd2eb2a2d514bfc7fc9c529	7bdda1a3-c125-44c9-922c-16c6d51e3e0e	nextflow run id_pipline.nf
+2024-12-02 12:04:03	-	goofy_noyce	-	b6f606206dd2eb2a2d514bfc7fc9c529	70f6e208-d6d8-4ff8-8846-bfe1ded373ed	nextflow run id_pipeline.nf
+2024-12-02 12:04:57	-	happy_brazil	-	b6f606206dd2eb2a2d514bfc7fc9c529	83a73a45-f8ef-45e1-8f7d-35c4a3c67f31	nextflow run id_pipeline.nf
+2024-12-05 13:53:46	-	distracted_watson	-	1a8a7e100abedfc904a44d766de409da	e2eb1dbf-db77-4499-8047-cad09545616e	nextflow run id_pipeline.nf
+2024-12-05 13:56:44	-	magical_picasso	-	28aea96ae8c3797b57488d8c90358b80	b3c6bdfb-e349-427a-8404-166045f16d1b	nextflow run id_pipeline.nf
+2024-12-05 14:01:43	-	happy_feynman	-	25e28f6f6e848a14c86579ffc2d56001	43a42007-3d1e-4054-a051-8f42cc305461	nextflow run id_pipeline.nf
+2024-12-05 14:06:24	5m 30s	silly_bernard	OK	ac272dd3ee40c95c77657ff6f5f454a5	46313d35-6bab-49ac-a7f5-a5933ea0642d	nextflow run id_pipeline.nf
+2024-12-05 14:18:21	3m 17s	reverent_dalembert	ERR	de3344efd0133443c2b0710ad5640159	dee9d4a7-a889-476d-984f-21d703667695	nextflow run id_pipeline.nf
+2024-12-05 14:27:18	4.1s	exotic_chandrasekhar	ERR	ad62a5e48fcc32eb07ece26ba47aa10f	31f6182e-10fd-4a6f-acc2-13aa7b106f7f	nextflow run id_pipeline.nf
+2024-12-05 14:29:58	-	berserk_dubinsky	-	653a644836de62a66e93777c41035ee5	47bddc71-3d9e-4eed-ba3b-e119dd60d296	nextflow run id_pipeline.nf
+2024-12-05 14:52:12	11s	tender_volta	ERR	653a644836de62a66e93777c41035ee5	ee849628-adbf-45cc-8b1a-f3d85b2b8b0c	nextflow run id_pipeline.nf
+2024-12-05 14:53:00	3m 42s	soggy_poisson	ERR	653a644836de62a66e93777c41035ee5	6bfea7b8-75e5-4b1c-a995-206a521749e0	nextflow run id_pipeline.nf
+2024-12-05 14:58:57	7m	awesome_cajal	ERR	6effa5ea0a0bd65c2f4eaddf3d4268c4	ea52996b-dea9-43b5-8bf0-bd5bfb8961ec	nextflow run id_pipeline.nf
+2024-12-05 15:06:10	9m 45s	amazing_coulomb	ERR	8bd8abc769a12f6ed7796ba238c0696b	82071c35-3ed2-434c-930f-f24229bc650e	nextflow run id_pipeline.nf
+2024-12-05 15:16:05	5m 54s	lethal_agnesi	ERR	83530fac3ab4d98b778558ae2936ee02	33017625-7659-42ed-b364-71414f2426cb	nextflow run id_pipeline.nf
+2024-12-05 17:43:27	7.4s	grave_varahamihira	OK	611187d3f2efb9bc1137fea69f30bfed	c47516be-2703-4c75-b292-0cf754909ae6	nextflow run id_pipeline.nf

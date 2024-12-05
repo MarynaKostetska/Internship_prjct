@@ -1,0 +1,22 @@
+--2024-11-26 13:13:01--  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_003663.2&rettype=gb&retmode=text
+Resolving eutils.ncbi.nlm.nih.gov (eutils.ncbi.nlm.nih.gov)... 2607:f220:41e:4290::110, 130.14.29.110
+Connecting to eutils.ncbi.nlm.nih.gov (eutils.ncbi.nlm.nih.gov)|2607:f220:41e:4290::110|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: ‘NC_003663.2.gb’
+
+     0K .......... .......... .......... .......... ..........  233K
+    50K .......... .......... .......... .......... ..........  470K
+   100K .......... .......... .......... .......... .......... 5.11M
+   150K .......... .......... .......... .......... ..........  535K
+   200K .......... .......... .......... .......... .......... 7.37M
+   250K .......... .......... .......... .......... .......... 9.12M
+   300K .......... .......... .......... .......... .......... 13.4M
+   350K .......... .......... .......... .......... .......... 37.3M
+   400K .......... .......... .......... .......... ..........  524K
+   450K .......... .......... .......... .......... .......    26.8M=0.5s
+
+2024-11-26 13:13:03 (926 KB/s) - ‘NC_003663.2.gb’ saved [509737]
+
+cp: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/35/ae19f732d62ecc87afcd0b25eae4e7/.command.out and .command.out are identical (not copied).
+cp: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/35/ae19f732d62ecc87afcd0b25eae4e7/.command.err and .command.err are identical (not copied).

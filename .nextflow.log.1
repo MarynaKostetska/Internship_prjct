@@ -1,94 +1,14 @@
-Nov-20 17:33:12.349 [main] DEBUG nextflow.cli.Launcher - $> nextflow run id_pipline.nf
-Nov-20 17:33:12.476 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
-Nov-20 17:33:12.524 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/m_kostetska/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
-Nov-20 17:33:12.547 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Nov-20 17:33:12.548 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Nov-20 17:33:12.555 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Nov-20 17:33:12.576 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Nov-20 17:33:12.698 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Nov-20 17:33:12.740 [main] DEBUG nextflow.cli.CmdRun - Launching `id_pipline.nf` [sad_caravaggio] DSL2 - revision: d2c41500a7
-Nov-20 17:33:12.744 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Nov-20 17:33:12.744 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Nov-20 17:33:12.893 [main] DEBUG nextflow.Session - Session UUID: 728f23cd-c336-4c9c-8d79-a93da477cf3e
-Nov-20 17:33:12.894 [main] DEBUG nextflow.Session - Run name: sad_caravaggio
-Nov-20 17:33:12.894 [main] DEBUG nextflow.Session - Executor pool size: 8
-Nov-20 17:33:12.912 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Nov-20 17:33:12.968 [main] DEBUG nextflow.cli.CmdRun - 
-  Version: 24.04.4 build 5917
-  Created: 01-08-2024 07:05 UTC (09:05 CEST)
-  System: Mac OS X 14.5
-  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21.0.4+7-LTS
-  Encoding: UTF-8 (UTF-8)
-  Process: 59991@MBP-Centr [192.168.0.8]
-  CPUs: 8 - Mem: 16 GB (271.7 MB) - Swap: 1 GB (940.8 MB) - Virtual threads ON
-Nov-20 17:33:13.003 [main] DEBUG nextflow.Session - Work-dir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work [Mac OS X]
-Nov-20 17:33:13.004 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/bin
-Nov-20 17:33:13.038 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Nov-20 17:33:13.060 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Nov-20 17:33:13.108 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Nov-20 17:33:13.126 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
-Nov-20 17:33:13.239 [main] DEBUG nextflow.Session - Session start
-Nov-20 17:33:14.108 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Nov-20 17:33:14.135 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/m_kostetska/.nextflow/secrets/store.json
-Nov-20 17:33:14.152 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@40717ed] - activable => nextflow.secret.LocalSecretsProvider@40717ed
-Nov-20 17:33:14.295 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-20 17:33:14.296 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-20 17:33:14.310 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Nov-20 17:33:14.326 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Nov-20 17:33:14.332 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Nov-20 17:33:14.570 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-20 17:33:14.570 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-20 17:33:14.590 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Nov-20 17:33:14.590 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Nov-20 17:33:14.597 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: downloadGenebank, buildEfetchUrl, fileSplitting
-Nov-20 17:33:14.597 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
-Nov-20 17:33:14.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > buildEfetchUrl
-Nov-20 17:33:14.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > downloadGenebank
-Nov-20 17:33:14.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fileSplitting
-Nov-20 17:33:14.602 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
-  Script_b6a7675e655467f2: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/id_pipline.nf
-Nov-20 17:33:14.602 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Nov-20 17:33:14.603 [main] DEBUG nextflow.Session - Session await
-Nov-20 17:33:14.929 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-20 17:33:14.932 [Task submitter] INFO  nextflow.Session - [1b/fa0b79] Submitted process > buildEfetchUrl
-Nov-20 17:33:15.048 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: buildEfetchUrl; status: COMPLETED; exit: 0; error: -; workDir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/1b/fa0b79c0bc5b653cfdb3cb42e22047]
-Nov-20 17:33:15.125 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-20 17:33:15.126 [Task submitter] INFO  nextflow.Session - [a2/f4367d] Submitted process > downloadGenebank
-Nov-20 17:33:16.584 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: downloadGenebank; status: COMPLETED; exit: 0; error: -; workDir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/a2/f4367d5bd5cb32542ceb71bbdd1bf8]
-Nov-20 17:33:16.646 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Nov-20 17:33:16.647 [Task submitter] INFO  nextflow.Session - [b8/2f01f8] Submitted process > fileSplitting
-Nov-20 17:33:16.705 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: fileSplitting; status: COMPLETED; exit: 127; error: -; workDir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/b8/2f01f816dd748920024429b7152ab6]
-Nov-20 17:33:16.711 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
-  task: name=fileSplitting; work-dir=/Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/b8/2f01f816dd748920024429b7152ab6
-  error [nextflow.exception.ProcessFailedException]: Process `fileSplitting` terminated with an error exit status (127)
-Nov-20 17:33:16.735 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'fileSplitting'
-
-Caused by:
-  Process `fileSplitting` terminated with an error exit status (127)
-
-
-Command executed:
-
-  genbank_to -g NC_003663.2.gb -n NC_003663.2.fasta
-  genbank_to -g NC_003663.2.gb --gff3 NC_003663.2.gff
-
-Command exit status:
-  127
-
-Command output:
-  (empty)
-
-Command error:
-  .command.sh: line 2: genbank_to: command not found
-
-Work dir:
-  /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/b8/2f01f816dd748920024429b7152ab6
-
-Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
-Nov-20 17:33:16.740 [main] DEBUG nextflow.Session - Session await > all processes finished
-Nov-20 17:33:16.741 [TaskFinalizer-3] DEBUG nextflow.Session - Session aborted -- Cause: Process `fileSplitting` terminated with an error exit status (127)
-Nov-20 17:33:16.775 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Nov-20 17:33:16.776 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Nov-20 17:33:16.793 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.5s; failedDuration=27ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-Nov-20 17:33:16.976 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Nov-20 17:33:17.005 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Dec-05 17:43:04.794 [main] DEBUG nextflow.cli.Launcher - $> nextflow run id_pipline.nf
+Dec-05 17:43:05.011 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Dec-05 17:43:05.061 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/m_kostetska/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Dec-05 17:43:05.119 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-05 17:43:05.121 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-05 17:43:05.134 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-05 17:43:05.155 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-05 17:43:05.184 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /Users/m_kostetska/.nextflow/scm
+Dec-05 17:43:05.208 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Cannot find script file: id_pipline.nf
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:517)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:321)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)

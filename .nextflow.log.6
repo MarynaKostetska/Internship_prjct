@@ -1,0 +1,95 @@
+Dec-05 14:52:11.579 [main] DEBUG nextflow.cli.Launcher - $> nextflow run id_pipeline.nf
+Dec-05 14:52:11.760 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Dec-05 14:52:11.800 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/m_kostetska/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Dec-05 14:52:11.855 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec-05 14:52:11.857 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec-05 14:52:11.864 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec-05 14:52:11.884 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec-05 14:52:12.007 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Dec-05 14:52:12.048 [main] DEBUG nextflow.cli.CmdRun - Launching `id_pipeline.nf` [tender_volta] DSL2 - revision: 653a644836
+Dec-05 14:52:12.053 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec-05 14:52:12.053 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Dec-05 14:52:12.190 [main] DEBUG nextflow.Session - Session UUID: ee849628-adbf-45cc-8b1a-f3d85b2b8b0c
+Dec-05 14:52:12.191 [main] DEBUG nextflow.Session - Run name: tender_volta
+Dec-05 14:52:12.192 [main] DEBUG nextflow.Session - Executor pool size: 8
+Dec-05 14:52:12.212 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec-05 14:52:12.274 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (09:05 CEST)
+  System: Mac OS X 14.5
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 21.0.4+7-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 34627@MacBook-Pro-Centr.local [127.0.0.1]
+  CPUs: 8 - Mem: 16 GB (476.9 MB) - Swap: 3 GB (1.2 GB) - Virtual threads ON
+Dec-05 14:52:12.421 [main] DEBUG nextflow.Session - Work-dir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work [Mac OS X]
+Dec-05 14:52:12.422 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/bin
+Dec-05 14:52:12.452 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec-05 14:52:12.481 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec-05 14:52:12.535 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec-05 14:52:12.551 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Dec-05 14:52:12.662 [main] DEBUG nextflow.Session - Session start
+Dec-05 14:52:13.667 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec-05 14:52:13.696 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/m_kostetska/.nextflow/secrets/store.json
+Dec-05 14:52:13.716 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2a4f8009] - activable => nextflow.secret.LocalSecretsProvider@2a4f8009
+Dec-05 14:52:13.875 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-05 14:52:13.876 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-05 14:52:13.888 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Dec-05 14:52:13.900 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Dec-05 14:52:13.907 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Dec-05 14:52:14.150 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-05 14:52:14.150 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-05 14:52:14.172 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Dec-05 14:52:14.172 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Dec-05 14:52:14.180 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: downloadGenebank, buildEfetchUrl, fileSplitting
+Dec-05 14:52:14.186 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Dec-05 14:52:14.188 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > buildEfetchUrl
+Dec-05 14:52:14.194 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > downloadGenebank
+Dec-05 14:52:14.195 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fileSplitting
+Dec-05 14:52:14.196 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_f144d5c93e484d00: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/id_pipeline.nf
+Dec-05 14:52:14.198 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec-05 14:52:14.198 [main] DEBUG nextflow.Session - Session await
+Dec-05 14:52:14.742 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-05 14:52:14.753 [Task submitter] INFO  nextflow.Session - [cb/532dde] Submitted process > buildEfetchUrl
+Dec-05 14:52:14.800 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: buildEfetchUrl; status: COMPLETED; exit: 0; error: -; workDir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/cb/532ddeec6d4d0d0e35047567761368]
+Dec-05 14:52:14.876 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-05 14:52:14.878 [Task submitter] INFO  nextflow.Session - [c8/e27264] Submitted process > downloadGenebank
+Dec-05 14:52:16.585 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: downloadGenebank; status: COMPLETED; exit: 0; error: -; workDir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/c8/e27264d083eb53c8f65847da07c6ef]
+Dec-05 14:52:16.737 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Dec-05 14:52:16.738 [Task submitter] INFO  nextflow.Session - [43/73a8da] Submitted process > fileSplitting
+Dec-05 14:52:22.634 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: fileSplitting; status: COMPLETED; exit: 1; error: -; workDir: /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/43/73a8daad45b57edd57256e06e2af0c]
+Dec-05 14:52:22.644 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=fileSplitting; work-dir=/Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/43/73a8daad45b57edd57256e06e2af0c
+  error [nextflow.exception.ProcessFailedException]: Process `fileSplitting` terminated with an error exit status (1)
+Dec-05 14:52:22.679 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'fileSplitting'
+
+Caused by:
+  Process `fileSplitting` terminated with an error exit status (1)
+
+
+Command executed:
+
+  genbank_to -g NC_003663.2.gb -n NC_003663.2.fasta
+  genbank_to -g NC_003663.2.gb --gff3 NC_003663.2.gff
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: /Users/m_kostetska/Documents/CQ_Bioinformathics/myenv/bin/genbank_to: Operation timed out
+
+Work dir:
+  /Users/m_kostetska/Documents/CQ_Bioinformathics/Internship_prjct/work/43/73a8daad45b57edd57256e06e2af0c
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Dec-05 14:52:22.686 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec-05 14:52:22.688 [TaskFinalizer-3] DEBUG nextflow.Session - Session aborted -- Cause: Process `fileSplitting` terminated with an error exit status (1)
+Dec-05 14:52:22.713 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Dec-05 14:52:22.713 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec-05 14:52:22.736 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1.6s; failedDuration=5.8s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Dec-05 14:52:22.737 [TaskFinalizer-3] WARN  nextflow.util.SimpleAgent - Got an interrupted exception while taking agent result | java.lang.InterruptedException
+Dec-05 14:52:22.938 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec-05 14:52:22.968 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
