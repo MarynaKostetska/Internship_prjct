@@ -4,22 +4,19 @@ from Bio.SeqFeature import FeatureLocation
 import logging
 import os
 
-""" Налаштування логування
-Логування дозволяє отримувати додаткову інформацію про виконання коду,
-наприклад, чи було знайдено промотори або чи є проблеми з вхідними файлами."""
-
+#Setting up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def find_promotors_with_parser(gff_file, fasta_file, result_folder):
-    # Визначення назви файлу без розширення
+    #Defining a file name without an extension
     fasta_basename = os.path.splitext(os.path.basename(fasta_file))[0]
 
-    # Динамічне створення імен вихідних файлів
+    #Dynamically create output file names
     promoter_output = os.path.join(result_folder, f"{fasta_basename}_promoters.fasta")
     non_promoter_output = os.path.join(result_folder, f"{fasta_basename}_non_promoters.fasta")
 
-    # Створення вихідної папки, якщо вона ще не існує
+    #Create a source folder
     os.makedirs(result_folder, exist_ok = True)
 
     #Read FASTA
@@ -35,7 +32,7 @@ def find_promotors_with_parser(gff_file, fasta_file, result_folder):
     non_promoters = []
 
     for feature in genome_record.features:
-        # Перевірка типу feature
+        #Check feature type
         if feature.type == "regulatory" and any("promoter" in note.lower() for note in feature.qualifiers.get("note", [])):
             promoters.append(feature.location)
 
