@@ -1,9 +1,9 @@
 nextflow.enable.dsl = 2
 
 //Define parameters
-params.seq_id = 'NC_003663.2'
+params.seq_id = 'KU710884.1' //'KU710884.1'(HVB), 'MH370367.1' (Salmonella phage S114),'AH002297.2', 'NC_003663.2'
 params.out = "${launchDir}/output"
-
+ 
 //Build Efetch URL
 process buildEfetchUrl {
     output:
@@ -57,23 +57,21 @@ process fileSplitting {
 	"""
 }
 
-
+/*
 process removeTitle {
     publishDir params.out
-
     input:
     path fasta
 
     output:
     path "${params.seq_id}_sequence.fasta"
-    
-    //'awk' - a word processor that allows you to manipulate text, including filtering, formatting and data processing.
+
     script:
     """
     awk '!/^>/ {print}' ${fasta} > "${params.seq_id}_sequence.fasta"
     """
 }
-
+*/
 workflow {
     //Create URL chanenel
     efetch_url_channel = buildEfetchUrl()
@@ -85,6 +83,6 @@ workflow {
      fasta_and_gff = fileSplitting(genbank_channel)
 
     //Pass only FASTA
-    no_title_fasta = removeTitle(fasta_and_gff.fasta) 
+    //no_title_fasta = removeTitle(fasta_and_gff.fasta) 
 
 }

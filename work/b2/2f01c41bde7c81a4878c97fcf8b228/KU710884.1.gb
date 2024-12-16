@@ -1,0 +1,55 @@
+LOCUS       KU710884                 340 bp    DNA     linear   VRL 21-FEB-2016
+DEFINITION  Hepatitis B virus isolate A00648 truncated precore/core protein
+            gene, promoter region and complete cds.
+ACCESSION   KU710884
+VERSION     KU710884.1
+KEYWORDS    .
+SOURCE      Hepatitis B virus
+  ORGANISM  Hepatitis B virus
+            Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes;
+            Blubervirales; Hepadnaviridae; Orthohepadnavirus.
+REFERENCE   1  (bases 1 to 340)
+  AUTHORS   Peng,Y., Zhuang,H. and Li,T.
+  TITLE     The more nucleotide changes of HBV core promoter/precore during the
+            early stage of antiviral treatment tend to be associated with a
+            better virological response
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 340)
+  AUTHORS   Peng,Y., Zhuang,H. and Li,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-FEB-2016) Department of Microbiology and Infectious
+            Disease Center, School of Basic Medical Sciences, Peking
+            University, 38 Xueyuan Road, Haidian District, Beijing, Beijing
+            100191, China
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..340
+                     /organism="Hepatitis B virus"
+                     /mol_type="genomic DNA"
+                     /isolate="A00648"
+                     /isolation_source="serum"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:10407"
+                     /geo_loc_name="China"
+                     /collection_date="2010"
+                     /note="genotype: C"
+     regulatory      <1..139
+                     /regulatory_class="promoter"
+                     /note="core promoter"
+     CDS             140..223
+                     /note="HBeAg; preC/C"
+                     /codon_start=1
+                     /product="truncated precore/core protein"
+                     /protein_id="AMJ17499.1"
+                     /translation="MQLFHLCLIISCSCPTVQASKLCLGWL"
+ORIGIN      
+        1 taagaggact cttggactct cagcaatgtc aacgaccgac cttgaggcgt acttcaaaga
+       61 ctgtttgctt aaggactggg aggagttagg ggaggagatt aggaggctgt aggcataaat
+      121 tggtctgttc accagcacca tgcaactttt tcacctctgc ctaatcatct cttgttcatg
+      181 tcctactgtt caagcctcca agctgtgcct tgggtggctt tagggcatgg acattgacac
+      241 ctataaagaa tttggagctt ctgtggagtt actctctttt ttgccttctg acttctttcc
+      301 ttctattcga gatctcctcg acaccgcctc tgctctgcat
+//
+

@@ -1,0 +1,11 @@
+--2024-12-16 14:43:32--  https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=KU710884.1&rettype=gb&retmode=text%0A
+Resolving eutils.ncbi.nlm.nih.gov (eutils.ncbi.nlm.nih.gov)... 2607:f220:41e:4290::110, 130.14.29.110
+Connecting to eutils.ncbi.nlm.nih.gov (eutils.ncbi.nlm.nih.gov)|2607:f220:41e:4290::110|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: ‘KU710884.1.gb’
+
+     0K ..                                                     3.22M=0.001s
+
+2024-12-16 14:43:33 (3.22 MB/s) - ‘KU710884.1.gb’ saved [2566]
+

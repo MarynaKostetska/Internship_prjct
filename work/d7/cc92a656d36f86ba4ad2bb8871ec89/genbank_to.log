@@ -1,0 +1,4 @@
+INFO:root:Starting genbank_to with ['/Users/m_kostetska/Documents/CQ_Bioinformathics/myenv/bin/genbank_to', '-g', 'KU710884.1.gb', '-n', 'KU710884.1.fasta']
+INFO:root:Writing all nucleotides to KU710884.1.fasta
+INFO:root:Starting genbank_to with ['/Users/m_kostetska/Documents/CQ_Bioinformathics/myenv/bin/genbank_to', '-g', 'KU710884.1.gb', '--gff3', 'KU710884.1.gff']
+INFO:root:Writing gff3 to KU710884.1.gff

@@ -19,3 +19,6 @@
 2024-12-05 15:16:05	5m 54s	lethal_agnesi	ERR	83530fac3ab4d98b778558ae2936ee02	33017625-7659-42ed-b364-71414f2426cb	nextflow run id_pipeline.nf
 2024-12-05 17:43:27	7.4s	grave_varahamihira	OK	611187d3f2efb9bc1137fea69f30bfed	c47516be-2703-4c75-b292-0cf754909ae6	nextflow run id_pipeline.nf
 2024-12-05 18:09:52	6.4s	hopeful_murdock	OK	7113a915efedc75fabf6467e378105fb	15bc6c49-5b31-4fe5-b692-68c78acdd92c	nextflow run id_pipeline.nf
+2024-12-05 22:01:01	1m 47s	desperate_bardeen	ERR	7113a915efedc75fabf6467e378105fb	73006bb6-0c8a-43c1-bf49-4e17c47f8c6a	nextflow run id_pipeline.nf
+2024-12-06 00:14:33	5.6s	confident_easley	ERR	7113a915efedc75fabf6467e378105fb	f0c69972-884d-42f8-9601-320f0b65a1f0	nextflow run id_pipeline.nf
+2024-12-16 14:43:29	7.6s	curious_kilby	OK	352f1eb2c75c2be8d4c40f4ca164f6e2	45cfc887-4ee6-49f3-b126-743a1f617b67	nextflow run id_pipeline.nf
